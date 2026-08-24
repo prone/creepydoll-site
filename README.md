@@ -3,7 +3,9 @@
 The public site for [Creepy Doll](https://github.com/prone/creepydoll), the
 8-bit platformer about a porcelain doll who only ever wanted a friend.
 
-**Live site:** https://prone.github.io/creepydoll-site/
+**Live site:** https://creepydoll.party
+(also mirrored at https://prone.github.io/creepydoll-site/ and
+https://creepydoll-site.pages.dev)
 
 ## What's here
 
@@ -17,13 +19,19 @@ The public site for [Creepy Doll](https://github.com/prone/creepydoll), the
 
 ## How to update and deploy
 
-Deploys are automatic: **anything pushed to `main` goes live on GitHub Pages**
-within a minute or two. The whole process is:
+The canonical host is **Cloudflare Pages** (project `creepydoll-site`,
+serving https://creepydoll.party). GitHub Pages redeploys automatically on
+push; Cloudflare needs one extra command:
 
 ```sh
 # 1. edit files, then
-git add -A && git commit -m "..." && git push
+git add -A && git commit -m "..." && git push        # GitHub Pages mirror
+npx wrangler pages deploy . --project-name creepydoll-site --branch main
 ```
+
+(`wrangler` is authenticated via `wrangler login` on this machine. The
+custom domains creepydoll.party and www.creepydoll.party are attached to
+the Pages project; their DNS lives in the Cloudflare zone.)
 
 ### Refreshing the playable game snapshot
 
