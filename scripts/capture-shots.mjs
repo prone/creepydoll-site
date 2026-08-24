@@ -1,12 +1,17 @@
 // Capture marketing screenshots from the real game.
+// Run from anywhere; paths resolve relative to this script.
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
-const require = createRequire('/Users/duncanwinter/projects/nasirproject/creepydoll/test/e2e.js');
+
+const HERE = path.dirname(fileURLToPath(import.meta.url));
+const SITE = path.resolve(HERE, '..');
+const GAMEDIR = path.resolve(SITE, '..', 'creepydoll');
+const require = createRequire(path.join(GAMEDIR, 'test', 'e2e.js'));
 const { chromium } = require('playwright');
 
-const GAME = 'file:///Users/duncanwinter/projects/nasirproject/creepydoll/index.html';
-const OUT = '/Users/duncanwinter/projects/nasirproject/creepydoll-site/assets/screens';
+const GAME = 'file://' + path.join(GAMEDIR, 'index.html');
+const OUT = path.join(SITE, 'assets', 'screens');
 
 const SHOTS = [
   { name: 'title', setup: `` },
