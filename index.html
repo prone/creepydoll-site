@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creepy Doll — she only ever wanted a friend</title>
+  <meta name="description" content="Creepy Doll: a five-level 8-bit chase through night roads, a haunted house, deep woods, frozen peaks, and an ancient tomb. Free to play in your browser.">
+  <meta property="og:title" content="Creepy Doll">
+  <meta property="og:description" content="She only ever wanted a friend. A five-level 8-bit platformer, free in your browser.">
+  <meta property="og:image" content="assets/screens/title.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕯️</text></svg>">
+</head>
+<body>
+
+<header class="hero">
+  <div class="stars" aria-hidden="true"></div>
+  <canvas id="dollCanvas" width="14" height="20" aria-hidden="true"></canvas>
+  <h1>CREEPY&nbsp;DOLL</h1>
+  <p class="tagline">she only ever wanted a friend.</p>
+  <p class="sub">A five-level 8-bit chase through night roads, a haunted house,
+     deep woods, frozen peaks, and an ancient tomb.</p>
+  <a class="cta" href="play/">▶ PLAY FREE IN YOUR BROWSER</a>
+  <p class="hint">no install &middot; no account &middot; just a doll and a boy who runs</p>
+</header>
+
+<section class="strip" aria-label="story">
+  <p>A porcelain doll wakes on a moonlit road. Somewhere ahead, a boy is running.<br>
+  The further she goes, the worse she looks, and the lullaby goes out of tune with her.<br>
+  <em>Tag him. That's all. Tag him and be friends.</em></p>
+</section>
+
+<section class="features">
+  <h2>WHAT WAITS IN THE DARK</h2>
+  <div class="grid">
+    <div class="card"><span class="pix">🌙</span><h3>5 LEVELS</h3>
+      <p>The blood-moon road. The boy's own house. The deep woods, a snowy ascent, and a tomb older than any of it.</p></div>
+    <div class="card"><span class="pix">🦇</span><h3>4 BOSS FORMS</h3>
+      <p>The boy keeps changing: a bat-throwing count, a clawed werewolf, an icicle-shrugging yeti, a skull-hurling gold-masked god.</p></div>
+    <div class="card"><span class="pix">🎪</span><h3>7 MINIGAMES</h3>
+      <p>Doll toss, balloon darts, coffin shuffle, tarot pairs, bell toll, crow gallery, grave dig, glyph rites, scarab races, spear gauntlets: the carnival follows her everywhere.</p></div>
+    <div class="card"><span class="pix">👁</span><h3>LOST BUTTON EYES</h3>
+      <p>Five are hidden along the road. Find four and she gets to see again. Worth it, mostly.</p></div>
+    <div class="card"><span class="pix">🕯</span><h3>LANTERNS &amp; CANDLES</h3>
+      <p>Checkpoints that cost seconds, not runs. Death takes a heart; the light gives her back.</p></div>
+    <div class="card"><span class="pix">♿</span><h3>ASSIST, WITHOUT SHAME</h3>
+      <p>Invincibility, game speed, infinite hearts, reduced flash, skip-minigames, all one Esc away, all saved.</p></div>
+  </div>
+</section>
+
+<section class="gallery">
+  <h2>FIVE FACES OF NIGHT</h2>
+  <div class="shots">
+    <figure><img src="assets/screens/road.png" alt="The moonlit road with a lantern checkpoint" loading="lazy"><figcaption>the road</figcaption></figure>
+    <figure><img src="assets/screens/house.png" alt="Inside the boy's warmly lit house" loading="lazy"><figcaption>his house</figcaption></figure>
+    <figure><img src="assets/screens/woods.png" alt="Giant trees in the deep woods" loading="lazy"><figcaption>the deep woods</figcaption></figure>
+    <figure><img src="assets/screens/snow.png" alt="Climbing the snowy mountain" loading="lazy"><figcaption>the mountain</figcaption></figure>
+    <figure><img src="assets/screens/tomb.png" alt="Torchlit tomb corridors" loading="lazy"><figcaption>the tomb</figcaption></figure>
+    <figure><img src="assets/screens/title.png" alt="Creepy Doll title screen" loading="lazy"><figcaption>where it begins</figcaption></figure>
+  </div>
+</section>
+
+<section class="bosses">
+  <h2>THE BOY, AT HIS WORST</h2>
+  <div class="shots">
+    <figure><img src="assets/screens/boss-dracula.png" alt="The Dracula boss fight under a storm window" loading="lazy"><figcaption>the count: stomp his bats, throw them back</figcaption></figure>
+    <figure><img src="assets/screens/boss-werewolf.png" alt="The werewolf boss fight in the chapel" loading="lazy"><figcaption>the wolf: silver candelabra, fetched again and again</figcaption></figure>
+    <figure><img src="assets/screens/boss-yeti.png" alt="The yeti boss fight in the ice cave" loading="lazy"><figcaption>the yeti: the cave is toothed above and below</figcaption></figure>
+    <figure><img src="assets/screens/boss-aztec.png" alt="The Aztec god boss fight in the burial chamber" loading="lazy"><figcaption>the god: obsidian against gold</figcaption></figure>
+  </div>
+</section>
+
+<section class="controls">
+  <h2>HOW SHE MOVES</h2>
+  <div class="keys">
+    <div><kbd>←</kbd><kbd>→</kbd> walk</div>
+    <div><kbd>SPACE</kbd> jump <span class="dim">(tap hops, hold flies)</span></div>
+    <div><kbd>Z</kbd> punch &nbsp; <kbd>X</kbd> kick</div>
+    <div><kbd>C</kbd> crouch</div>
+    <div><kbd>↓</kbd> hold 2s: power jump</div>
+    <div><kbd>ESC</kbd> pause &amp; assist menu</div>
+  </div>
+  <p class="dim">Coyote time and buffered jumps are built in. The game reads intent, not frame-perfect input.</p>
+</section>
+
+<section class="cta-bottom">
+  <a class="cta" href="play/">▶ PLAY CREEPY DOLL NOW</a>
+  <p class="hint">works in any modern desktop browser</p>
+</section>
+
+<footer>
+  <p>CREEPY DOLL &mdash; an 8-bit platformer with no dependencies and too many feelings.</p>
+  <p><a href="https://github.com/prone/creepydoll">game source on GitHub</a></p>
+  <p class="dim">and still he runs.</p>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
