@@ -38,7 +38,7 @@ the Pages project; their DNS lives in the Cloudflare zone.)
 When the game repo changes, copy the two files over and push:
 
 ```sh
-cp ../creepydoll/game.js ../creepydoll/index.html play/
+cp ../creepydoll/game.js ../creepydoll/index.html ../creepydoll/favicon.png play/
 git add play && git commit -m "Sync game snapshot" && git push
 ```
 
