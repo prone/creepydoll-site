@@ -2,8 +2,9 @@
 
 Live project: **creepydoll** in prone's Org, ref `sisgndxlargcuhuiutul`,
 https://supabase.com/dashboard/project/sisgndxlargcuhuiutul (created
-2026-09-10 by the CLI). The database password is in `.dbpassword` here,
-gitignored — back it up.
+2026-09-10 by the CLI). The database password is in `~/.config/creepydoll/supabase-db-password`
+on the dev Mac — never inside this repo, because `wrangler pages deploy`
+uploads every file in the folder, dotfiles included, and serves it.
 
 `schema.sql` is the whole backend: one `runs` table the game inserts into with
 the public anon key, and a `leaderboard` view the site reads. Row Level
