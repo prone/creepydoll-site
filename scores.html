@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://*.supabase.co; base-uri 'none'; form-action 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creepy Doll — the board</title>
+  <meta name="description" content="The Creepy Doll leaderboard: the players who walked the whole night, ranked by score, speed, and deaths.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html">← creepydoll.party</a>
+  <a href="progress.html">how she grows</a>
+  <a href="scores.html" class="here">the board</a>
+  <a href="play/">play</a>
+</nav>
+
+<header class="hero hero-small">
+  <div class="stars" aria-hidden="true"></div>
+  <h1>THE BOARD</h1>
+  <p class="tagline">everyone who walked the whole night.</p>
+  <p class="sub">Only finished runs are here: the tomb, the mask, the boy gone again. Sign
+     yours on the win screen. Assisted runs (any cheat, a warp, a summoned ride) can't sign.</p>
+</header>
+
+<section class="board">
+  <div class="tabs" role="tablist">
+    <button class="tab here" data-sort="score" role="tab" aria-selected="true">TOP SCORES</button>
+    <button class="tab" data-sort="fast" role="tab" aria-selected="false">FASTEST</button>
+    <button class="tab" data-sort="clean" role="tab" aria-selected="false">FEWEST DEATHS</button>
+    <button class="tab" data-sort="whole" role="tab" aria-selected="false">MOST COMPLETE</button>
+  </div>
+  <p class="lede" id="boardNote">fetching the night's records...</p>
+  <div class="tbl wide">
+    <table id="boardTable">
+      <thead><tr>
+        <th>#</th><th>NAME</th><th>SCORE</th><th>TIME</th><th>DEATHS</th><th>ACCOLADES</th><th>WHEN</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div class="legend">
+    <span title="all ten carnival games won in one run">🎪 carnival royalty</span>
+    <span title="every lost part found in one run">🤍 whole again</span>
+    <span title="a level finished without a scratch">✨ untouched ×N</span>
+    <span title="no deaths">🕯 deathless</span>
+    <span title="ten or more hearts at the end">💗 overfull</span>
+    <span title="completion % across all sessions">🏆 completion</span>
+  </div>
+</section>
+
+<section class="cta-bottom">
+  <a class="cta" href="play/">▶ EARN A LINE</a>
+  <p class="hint"><a href="progress.html">how the points work</a></p>
+</section>
+
+<footer>
+  <p>CREEPY DOLL &mdash; an 8-bit platformer with no dependencies and too many feelings.</p>
+  <p><a href="index.html">back to creepydoll.party</a> &middot; <a href="privacy.html">privacy</a> &middot; <a href="https://github.com/prone/creepydoll">game source on GitHub</a></p>
+  <p class="dim">and still he runs.</p>
+</footer>
+
+<script src="scores.js"></script>
+</body>
+</html>

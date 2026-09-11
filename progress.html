@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creepy Doll — how she grows</title>
+  <meta name="description" content="How the doll changes over the night: the creep meter, the melt, hearts, rides, her lost parts, and every way to score points in Creepy Doll.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html">← creepydoll.party</a>
+  <a href="progress.html" class="here">how she grows</a>
+  <a href="scores.html">the board</a>
+  <a href="play/">play</a>
+</nav>
+
+<header class="hero hero-small">
+  <div class="stars" aria-hidden="true"></div>
+  <h1>HOW SHE GROWS</h1>
+  <p class="tagline">the further she goes, the worse she looks. that's the point.</p>
+  <p class="sub">There is no experience bar. Her power is her decay: the road cracks the
+     porcelain, the house melts her, and the night hands her wings, hearts, and weapons.
+     This page is everything she can become, and everything that scores.</p>
+</header>
+
+<section class="stages">
+  <h2>THE CREEP METER</h2>
+  <p class="lede">The HUD shows four notches, bottom-left. On the road (level 1) each notch
+     lights as she passes roughly another quarter of the way. Every stage changes how she
+     looks, reddens the moon, and detunes the music-box lullaby a little more.</p>
+  <div class="stage-row">
+    <figure class="stage"><canvas class="doll" data-stage="0" width="14" height="20"></canvas>
+      <figcaption><b>STAGE 0 — PORCELAIN</b><span>clean paint, both button eyes, a lullaby in tune.</span></figcaption></figure>
+    <figure class="stage"><canvas class="doll" data-stage="1" width="14" height="20"></canvas>
+      <figcaption><b>STAGE 1 — THE PAINT CHIPS</b><span>"the paint begins to chip..." hairline cracks, first stains on the dress.</span></figcaption></figure>
+    <figure class="stage"><canvas class="doll" data-stage="2" width="14" height="20"></canvas>
+      <figcaption><b>STAGE 2 — THE EYE</b><span>"her button eye is gone." a socket, a red scratch, the melody starts to sour.</span></figcaption></figure>
+    <figure class="stage"><canvas class="doll" data-stage="3" width="14" height="20"></canvas>
+      <figcaption><b>STAGE 3 — VERY WRONG</b><span>"something is very wrong." full creep. the lullaby stumbles, and she gains a weapon.</span></figcaption></figure>
+  </div>
+  <div class="rules">
+    <p><b>It sticks.</b> Past the road she stays at full creep for the rest of the game.</p>
+    <p><b>Death resets it.</b> Lose every heart and the retry starts her porcelain-clean.
+       She earns the cracks all over again, and the shards with them.</p>
+    <p><b>Full creep unlocks porcelain shards.</b> At stage 3 every kick (<kbd>X</kbd>) also
+       flings a spinning shard of her own porcelain: a short-range thrown weapon that hurts
+       whatever it lands on, the dog included. It is the only ranged attack she has on foot.</p>
+  </div>
+</section>
+
+<section class="melt">
+  <h2>THE MELT</h2>
+  <p class="lede">A fifth notch, a red gone almost black. This one isn't earned by walking.</p>
+  <div class="rules">
+    <p><b>Where:</b> in the boy's house (level 2), lighting the <em>second</em> candle
+       checkpoint. "she is annoyed." Half of her runs to ink and drips as she walks.</p>
+    <p><b>It's story-bound.</b> Levels 3, 4 and 5 start already melted; that candle already
+       burned. Dying in the house and retrying re-earns it at the second candle.</p>
+    <p><b>The saucer's dome keeps the light off her.</b> Fly past the candles and the melt
+       waits until she steps out.</p>
+  </div>
+</section>
+
+<section class="hearts">
+  <h2>HEARTS: NO CEILING</h2>
+  <p class="lede">She starts with five. Every heart she earns adds a new container to the
+     HUD, in rows of ten. Ten at once earns the OVERFULL badge.</p>
+  <div class="grid">
+    <div class="card"><span class="pix">🦇</span><h3>KILL A BAT</h3><p>Always one heart, even at full health.</p></div>
+    <div class="card"><span class="pix">🎪</span><h3>WIN A MINIGAME</h3><p>Every win pays one heart. The doll toss pays one per bucket: three buckets, three hearts.</p></div>
+    <div class="card"><span class="pix">🛸</span><h3>BOARD THE SAUCER</h3><p>Five borrowed hearts, shown green. They go home when she leaves; every heart she owned before boarding walks out with her.</p></div>
+    <div class="card"><span class="pix">💔</span><h3>WHAT COSTS ONE</h3><p>Enemy contact. A pit (after a second in the dark the last lantern pulls her back). Vermin cost half. The dog's bite. On the last heart, the dark keeps her.</p></div>
+  </div>
+</section>
+
+<section class="rides">
+  <h2>RIDES</h2>
+  <div class="grid two">
+    <div class="card"><span class="pix">🐉</span><h3>THE DRAGON</h3>
+      <p><b>How:</b> survive one minute in a level and a purple dragon with no eyes arrives and follows her. Jump onto its back.<br>
+      <b>Powers:</b> free flight on the arrows. <kbd>Z</kbd> breathes a short gust of flame. <kbd>X</kbd> spits a flame ball that roasts anything it touches. <kbd>C</kbd> hops off.<br>
+      <b>The price:</b> spectral valkyries climb after her while she rides, up to three at a time, spear-first, tougher than bats. Dismount and they withdraw.</p></div>
+    <div class="card"><span class="pix">🛸</span><h3>THE FLYING SAUCER</h3>
+      <p><b>How:</b> every so often a silver door full of stars appears ahead, counting down. Reach it within three seconds.<br>
+      <b>Powers:</b> +5 borrowed hearts, free flight, <kbd>Z</kbd> fires laser beams, the tractor beam under the dome lifts any enemy she hovers over and <kbd>X</kbd> fires the passenger back out as a projectile. <kbd>C</kbd> bails out.<br>
+      <b>The price:</b> two to five jet fighters scramble with missiles. Near the end of the level the saucer starts smoking: eject in time, or the explosion costs a heart.</p></div>
+  </div>
+</section>
+
+<section class="parts">
+  <h2>HER LOST PARTS</h2>
+  <p class="lede">Entirely optional, always tucked somewhere high in the back half, glinting faintly.</p>
+  <div class="grid">
+    <div class="card"><span class="pix">👁</span><h3>BUTTON EYES (THE ROAD)</h3><p>Four are hidden along level 1: platform tops, over ravines, one impossibly high, one behind the dollhouse, one where the wall is cracked. Find all four and "she sees": the SHE SEES badge, and the tag at the end pays double.</p></div>
+    <div class="card"><span class="pix">🎀</span><h3>HER BRAIDS (THE HOUSE)</h3><p>Level 2. +500 and the HER BRAIDS badge.</p></div>
+    <div class="card"><span class="pix">🦷</span><h3>HER IVORY TEETH (THE WOODS)</h3><p>Level 3. +500 and the HER IVORY TEETH badge.</p></div>
+    <div class="card"><span class="pix">💅</span><h3>HER FINGERNAILS (THE SNOW)</h3><p>Level 4. +500 and the HER FINGERNAILS badge.</p></div>
+    <div class="card"><span class="pix">🤍</span><h3>HER PORCELAIN HEART (THE TOMB)</h3><p>Level 5. +500 and the HER PORCELAIN HEART badge.</p></div>
+    <div class="card"><span class="pix">🏆</span><h3>COMPLETION %</h3><p>One number behind every "% finished": 5 parts + 4 bosses + 10 minigames + 19 achievements, equally weighted. <kbd>Tab</kbd> on the pause screen shows the list.</p></div>
+  </div>
+</section>
+
+<section class="scoring">
+  <h2>EVERY WAY TO SCORE</h2>
+  <p class="lede">Points carry across levels. Dying keeps the level but resets the level's
+     score, so a clean run is worth more than a stubborn one.</p>
+
+  <div class="tables">
+  <div class="tbl">
+    <h3>THE ROAD AND THE CHASE</h3>
+    <table>
+      <tr><td>Tag the boy at the dollhouse</td><td>1,000</td></tr>
+      <tr><td>…having found all four button eyes</td><td>+1,000</td></tr>
+      <tr><td>Each button eye</td><td>200</td></tr>
+      <tr><td>Each lost part (braids, teeth, nails, heart)</td><td>500</td></tr>
+      <tr><td>Snap a spider's web (three hits on the thread)</td><td>200</td></tr>
+      <tr><td>Send the dog off (three hits)</td><td>250</td></tr>
+      <tr><td>Down a jet (laser, or tractor-beam throw)</td><td>300</td></tr>
+    </table>
+  </div>
+
+  <div class="tbl">
+    <h3>ENEMIES</h3>
+    <table>
+      <tr><td>Valkyrie</td><td>300</td></tr>
+      <tr><td>Bear, mountain lion, mummy</td><td>250</td></tr>
+      <tr><td>Snake, wolf, goat, owl, cobra</td><td>200</td></tr>
+      <tr><td>Rat</td><td>150</td></tr>
+      <tr><td>Bat, spider, cockroach, scarab</td><td>100</td></tr>
+      <tr><td>Ant</td><td>50</td></tr>
+    </table>
+  </div>
+
+  <div class="tbl">
+    <h3>BOSSES</h3>
+    <table>
+      <tr><td>The pale boy: each thrown bat or roach that lands</td><td>500</td></tr>
+      <tr><td>…stomping a bat or roach to arm it</td><td>50</td></tr>
+      <tr><td>…the spell breaks</td><td>1,000</td></tr>
+      <tr><td>The werewolf: each candelabra hit</td><td>400</td></tr>
+      <tr><td>…he breaks through the wall</td><td>1,500</td></tr>
+      <tr><td>The yeti: each icicle hit</td><td>400</td></tr>
+      <tr><td>…a fist at half power</td><td>150</td></tr>
+      <tr><td>…he escapes down the tunnel</td><td>1,500</td></tr>
+      <tr><td>The gold-masked god: each dagger hit</td><td>400</td></tr>
+      <tr><td>…the mask falls</td><td>2,000</td></tr>
+    </table>
+  </div>
+
+  <div class="tbl">
+    <h3>THE CARNIVAL (each win also pays a heart)</h3>
+    <table>
+      <tr><td>Doll toss, per bucket landed (three buckets)</td><td>300</td></tr>
+      <tr><td>Balloon darts, per pop / three-of-four win</td><td>100 / +200</td></tr>
+      <tr><td>Coffin shuffle, right coffin</td><td>200</td></tr>
+      <tr><td>Fortune teller (tarot pairs): 800, minus 100 per extra flip</td><td>100–800</td></tr>
+      <tr><td>Bell toll: a true toll / a decent swing</td><td>200 / 50</td></tr>
+      <tr><td>Crow gallery, per crow</td><td>150</td></tr>
+      <tr><td>Grave dig, the right grave / a wrong one</td><td>300 / 50</td></tr>
+      <tr><td>Glyph rite, four words said back</td><td>400</td></tr>
+      <tr><td>Scarab race, the right beetle</td><td>300</td></tr>
+      <tr><td>Spear gauntlet, three gates dashed</td><td>400</td></tr>
+    </table>
+  </div>
+  </div>
+
+  <p class="dim center">A perfect line through all ten games with every bucket landed is worth about 4,300 and ten hearts.
+     Every boss on first contact is another 6,000 plus the hits. The rest is bats.</p>
+</section>
+
+<section class="cta-bottom">
+  <a class="cta" href="play/">▶ GO GET CRACKED</a>
+  <p class="hint"><a href="scores.html">see who's on the board</a></p>
+</section>
+
+<footer>
+  <p>CREEPY DOLL &mdash; an 8-bit platformer with no dependencies and too many feelings.</p>
+  <p><a href="index.html">back to creepydoll.party</a> &middot; <a href="https://github.com/prone/creepydoll">game source on GitHub</a></p>
+  <p class="dim">and still he runs.</p>
+</footer>
+
+<script src="site.js"></script>
+<script src="progress.js"></script>
+</body>
+</html>

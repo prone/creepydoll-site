@@ -14,6 +14,15 @@ https://creepydoll-site.pages.dev)
   four decay stages.
 - `assets/screens/` — real screenshots captured from the game headlessly
   (levels and all four boss fights).
+- `progress.html` + `progress.js` — "how she grows": the creep stages, the
+  melt, hearts, rides, her lost parts, and every point value in the game.
+  Point values are transcribed from `game.js`; re-check them when scoring
+  changes.
+- `scores.html` + `scores.js` — "the board": the public leaderboard, read
+  from the Supabase `leaderboard` view with plain fetch. Four sort tabs
+  (score, fastest, fewest deaths, most complete) and accolade icons.
+- `supabase/` — `schema.sql` is the whole backend (project
+  `creepydoll`, ref `sisgndxlargcuhuiutul`, in prone's Org). See its README.
 - `play/` — a vendored snapshot of the game itself (`game.js` + `index.html`),
   so "Play in your browser" works from the same static host.
 
