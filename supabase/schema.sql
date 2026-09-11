@@ -20,6 +20,7 @@ create table if not exists public.runs (
   untouched   integer not null check (untouched between 0 and 5),
   hearts      integer not null check (hearts between 1 and 200),
   completion  integer not null check (completion between 0 and 100),
+  creep       integer not null default 0 check (creep between 0 and 4),
   version     text    not null check (char_length(version) <= 16)
 );
 
@@ -35,7 +36,7 @@ create policy "runs: anon insert" on public.runs
 create or replace view public.leaderboard
   with (security_invoker = false) as
   select id, created_at, name, score, seconds, deaths, minis, parts,
-         untouched, hearts, completion
+         untouched, hearts, completion, creep
   from public.runs;
 
 grant select on public.leaderboard to anon;

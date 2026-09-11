@@ -38,6 +38,7 @@ function accolades(r) {
   if (r.untouched > 0) a.push(['✨×' + r.untouched, r.untouched + ' level' + (r.untouched > 1 ? 's' : '') + ' untouched']);
   if (r.deaths === 0) a.push(['🕯', 'deathless']);
   if (r.hearts >= 10) a.push(['💗', 'overfull: ' + r.hearts + ' hearts at the end']);
+  if (r.creep >= 4) a.push(['🖤', 'at her worst: she finished melted']);
   a.push(['🏆' + r.completion + '%', 'completion ' + r.completion + '%']);
   return a;
 }
@@ -101,6 +102,7 @@ async function load() {
                  seconds: Math.max(0, x.seconds | 0), deaths: Math.max(0, x.deaths | 0),
                  minis: x.minis | 0, parts: x.parts | 0, untouched: x.untouched | 0,
                  hearts: x.hearts | 0, completion: Math.max(0, Math.min(100, x.completion | 0)),
+                 creep: Math.max(0, Math.min(4, x.creep | 0)),
                  created_at: x.created_at || new Date().toISOString(),
                }));
     render();

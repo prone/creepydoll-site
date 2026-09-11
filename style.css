@@ -287,3 +287,5 @@ footer a:hover { color: var(--gold); }
 .tbl.wide tr.top2 td.name { color: #d8d0e8; }
 .tbl.wide tr.top3 td.name { color: #c9906a; }
 .legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px; margin-top: 22px; color: var(--dimmer); font-size: 19px; }
+.stage-row.single { grid-template-columns: minmax(210px, 520px); justify-content: center; }
+.stage-row.single .doll { filter: drop-shadow(0 0 16px rgba(12, 10, 18, .9)) drop-shadow(0 0 6px rgba(201, 48, 74, .4)); }

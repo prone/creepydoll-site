@@ -32,39 +32,52 @@
 
 <section class="stages">
   <h2>THE CREEP METER</h2>
-  <p class="lede">The HUD shows four notches, bottom-left. On the road (level 1) each notch
-     lights as she passes roughly another quarter of the way. Every stage changes how she
-     looks, reddens the moon, and detunes the music-box lullaby a little more.</p>
+  <p class="lede">Her power is her decay. One meter, bottom-left of the HUD, filled by anything she
+     does while she stays alive. Five notches, one every twenty points. It never resets between
+     levels, and nothing on it is ever required to finish one. Every stage changes how she looks,
+     reddens the moon, and detunes the music-box lullaby a little more.</p>
   <div class="stage-row">
     <figure class="stage"><canvas class="doll" data-stage="0" width="14" height="20"></canvas>
-      <figcaption><b>STAGE 0 — PORCELAIN</b><span>clean paint, both button eyes, a lullaby in tune.</span></figcaption></figure>
+      <figcaption><b>0 — PORCELAIN</b><span>clean paint, both button eyes, a lullaby in tune.</span></figcaption></figure>
     <figure class="stage"><canvas class="doll" data-stage="1" width="14" height="20"></canvas>
-      <figcaption><b>STAGE 1 — THE PAINT CHIPS</b><span>"the paint begins to chip..." hairline cracks, first stains on the dress.</span></figcaption></figure>
+      <figcaption><b>20 — CHIPPED</b><span>"the paint begins to chip..." hairline cracks. Her kicks carry enemies further.</span></figcaption></figure>
     <figure class="stage"><canvas class="doll" data-stage="2" width="14" height="20"></canvas>
-      <figcaption><b>STAGE 2 — THE EYE</b><span>"her button eye is gone." a socket, a red scratch, the melody starts to sour.</span></figcaption></figure>
+      <figcaption><b>40 — ONE-EYED</b><span>"her button eye is gone." The power jump coils in one second instead of two.</span></figcaption></figure>
     <figure class="stage"><canvas class="doll" data-stage="3" width="14" height="20"></canvas>
-      <figcaption><b>STAGE 3 — VERY WRONG</b><span>"something is very wrong." full creep. the lullaby stumbles, and she gains a weapon.</span></figcaption></figure>
+      <figcaption><b>60 — VERY WRONG</b><span>"something is very wrong." Every kick flings a shard of her own porcelain.</span></figcaption></figure>
   </div>
   <div class="rules">
-    <p><b>It sticks.</b> Past the road she stays at full creep for the rest of the game.</p>
-    <p><b>Death resets it.</b> Lose every heart and the retry starts her porcelain-clean.
-       She earns the cracks all over again, and the shards with them.</p>
-    <p><b>Full creep unlocks porcelain shards.</b> At stage 3 every kick (<kbd>X</kbd>) also
-       flings a spinning shard of her own porcelain: a short-range thrown weapon that hurts
-       whatever it lands on, the dog included. It is the only ranged attack she has on foot.</p>
+    <p><b>What fills it.</b> New ground walked (five points a screen). Kills (a snake is four, a
+       valkyrie six). A minigame won, a lost part found, a boss wounded, the dog sent off: ten
+       each. A lantern lit: three. A button eye: two.</p>
+    <p><b>Clean play fills it faster.</b> Every fifteen seconds without being hurt steps the rate
+       up, to double after a minute. One hit and the streak is gone.</p>
+    <p><b>A hit knocks a notch off.</b> Twenty points, a full stage, every time something touches
+       her. Vermin cost ten. A pit costs a heart and a notch. "she is less than she was."</p>
+    <p><b>Breaking empties it, but she can go back for herself.</b> Lose her last heart and the
+       meter is zero, but a glinting piece of her stays where she fell, holding everything she had.
+       Retry the level, walk over it, and she is whole again. Break again before you reach it and
+       the piece is gone for good.</p>
   </div>
 </section>
 
 <section class="melt">
   <h2>THE MELT</h2>
-  <p class="lede">A fifth notch, a red gone almost black. This one isn't earned by walking.</p>
+  <p class="lede">The fifth notch, at eighty. A red gone almost black. It takes heat.</p>
+  <div class="stage-row single">
+    <figure class="stage"><canvas class="doll" data-stage="3" width="14" height="20"></canvas>
+      <figcaption><b>80 — MELTED</b><span>"she is annoyed." Half of her runs to ink and drips as she walks. Pits cost nothing: the ink pours back out. Her shards leave slicks that slow whatever wades through them.</span></figcaption></figure>
+  </div>
   <div class="rules">
-    <p><b>Where:</b> in the boy's house (level 2), lighting the <em>second</em> candle
-       checkpoint. "she is annoyed." Half of her runs to ink and drips as she walks.</p>
-    <p><b>It's story-bound.</b> Levels 3, 4 and 5 start already melted; that candle already
-       burned. Dying in the house and retrying re-earns it at the second candle.</p>
-    <p><b>The saucer's dome keeps the light off her.</b> Fly past the candles and the melt
-       waits until she steps out.</p>
+    <p><b>Heat melts her.</b> Beside a candle in the house or a torch in the tomb, riding the
+       dragon, or aboard a burning saucer, the meter runs at double speed, and only there can it
+       cross eighty. Lanterns, will-o-wisps, and frozen crystals are cold light: the road can crack
+       her, but it can never melt her.</p>
+    <p><b>Cold sets her.</b> On the mountain the meter fills at half speed and the melt drains
+       away. She climbs the summit very wrong but solid. The tomb's torches melt her one last time.</p>
+    <p><b>The boy sees it.</b> Reach a boss door melted and "he sees what she is": he starts the
+       fight already wounded, and the AT HER WORST badge is hers. Finish the game melted and the
+       board marks the run 🖤.</p>
   </div>
 </section>
 
@@ -103,7 +116,7 @@
     <div class="card"><span class="pix">🦷</span><h3>HER IVORY TEETH (THE WOODS)</h3><p>Level 3. +500 and the HER IVORY TEETH badge.</p></div>
     <div class="card"><span class="pix">💅</span><h3>HER FINGERNAILS (THE SNOW)</h3><p>Level 4. +500 and the HER FINGERNAILS badge.</p></div>
     <div class="card"><span class="pix">🤍</span><h3>HER PORCELAIN HEART (THE TOMB)</h3><p>Level 5. +500 and the HER PORCELAIN HEART badge.</p></div>
-    <div class="card"><span class="pix">🏆</span><h3>COMPLETION %</h3><p>One number behind every "% finished": 5 parts + 4 bosses + 10 minigames + 19 achievements, equally weighted. <kbd>Tab</kbd> on the pause screen shows the list.</p></div>
+    <div class="card"><span class="pix">🏆</span><h3>COMPLETION %</h3><p>One number behind every "% finished": 5 parts + 4 bosses + 10 minigames + 21 achievements, equally weighted. <kbd>Tab</kbd> on the pause screen shows the list.</p></div>
   </div>
 </section>
 
