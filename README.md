@@ -13,7 +13,7 @@ https://creepydoll-site.pages.dev)
   doll is drawn live from the game's own pixel strings and cycles through her
   four decay stages.
 - `assets/screens/` — real screenshots captured from the game headlessly
-  (levels and all four boss fights).
+  (all seven levels and all six boss fights).
 - `progress.html` + `progress.js` — "how she grows": the creep stages, the
   melt, hearts, rides, her lost parts, and every point value in the game.
   Point values are transcribed from `game.js`; re-check them when scoring

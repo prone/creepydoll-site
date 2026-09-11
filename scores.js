@@ -33,8 +33,8 @@ function ago(iso) {
 }
 function accolades(r) {
   const a = [];
-  if (r.minis >= 10) a.push(['🎪', 'carnival royalty: all ten games won']);
-  if (r.parts >= 5) a.push(['🤍', 'whole again: every lost part found']);
+  if (r.minis >= 16) a.push(['🎪', 'carnival royalty: all sixteen games won']);
+  if (r.parts >= 7) a.push(['🤍', 'whole again: every lost part found']);
   if (r.untouched > 0) a.push(['✨×' + r.untouched, r.untouched + ' level' + (r.untouched > 1 ? 's' : '') + ' untouched']);
   if (r.deaths === 0) a.push(['🕯', 'deathless']);
   if (r.hearts >= 10) a.push(['💗', 'overfull: ' + r.hearts + ' hearts at the end']);

@@ -33,6 +33,12 @@ const SHOTS = [
   { name: 'tomb', setup: `
       level = 5; resetGame(); state = 'play'; player.invuln = 999999;
       player.x = 900; player.y = 100; player.maxX = 900; await fr(30);` },
+  { name: 'cave', setup: `
+      level = 6; resetGame(); state = 'play'; player.invuln = 999999;
+      player.x = 1060; player.y = 100; player.maxX = 1060; await fr(30);` },
+  { name: 'clouds', setup: `
+      level = 7; resetGame(); state = 'play'; player.invuln = 999999;
+      player.x = 900; player.y = 40; player.maxX = 900; await fr(40);` },
   { name: 'boss-dracula', setup: `
       level = 2; resetGame(); state = 'play'; startBoss(); player.invuln = 999999;
       boss.shootCd = 20; await fr(45);` },
@@ -45,6 +51,12 @@ const SHOTS = [
   { name: 'boss-aztec', setup: `
       level = 5; resetGame(); state = 'play'; startBoss(); player.invuln = 999999;
       boss.shootCd = 25; player.x = 90; await fr(45);` },
+  { name: 'boss-wyrm', setup: `
+      level = 6; resetGame(); state = 'play'; startBoss(); player.invuln = 999999;
+      boss.breathCd = 1; player.x = 100; await fr(60);` },
+  { name: 'boss-ghidorah', setup: `
+      level = 7; resetGame(); state = 'play'; startBoss(); player.invuln = 999999;
+      boss.pickCd = 1; boss.gustCd = 9999; player.x = 60; await fr(75);` },
 ];
 
 const browser = await chromium.launch();
